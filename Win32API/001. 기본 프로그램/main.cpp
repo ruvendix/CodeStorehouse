@@ -100,15 +100,15 @@ INT32 APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmd
 
 LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 Message, WPARAM wParam, LPARAM lParam)
 {
-	// switch ~ case 내부에서 지역변수를 사용하려면
-	//
-	// case 1:
-	// {
-	//     INT32 num;
-    //     break;
-	// }
-	//
-	// 이렇게 묶어야 합니다. 안 묶으면 컴파일 오류가 발생할 수 있습니다.
+   // switch ~ case 내부에서 지역변수를 사용하려면
+   //
+   // case 1:
+   // {
+   //     INT32 num;
+   //     break;
+   // }
+   //
+   // 이렇게 묶어야 합니다. 안 묶으면 컴파일 오류가 발생할 수 있습니다.
 	switch (Message)
 	{
 		case WM_CLOSE:
