@@ -27,22 +27,22 @@ INT32 main()
 {
 	MessageBoxStyleInfo messageBoxStyleInfoTable[] =
 	{
-		{ MB_OK,                "확인" },
-		{ MB_OKCANCEL,          "확인 | 취소" },
-		{ MB_ABORTRETRYIGNORE,  "중단 | 다시 시도 | 무시" },
-		{ MB_YESNO,             "예 | 아니오" },
-	    { MB_YESNOCANCEL,       "예 | 아니오 | 취소" },
-		{ MB_RETRYCANCEL,       "다시 시도 | 취소" },
-		{ MB_CANCELTRYCONTINUE, "취소 | 다시 시도 | 계속" },
-	    { MB_HELP,              "확인 | 도움말" },
-		{ MB_USERICON,          "사용자 정의 아이콘 | 확인" },
-		{ MB_ICONQUESTION,      "물음표 아이콘 | 확인" },
-		{ MB_ICONERROR,         "오류 아이콘 | 확인" },   // MB_ICONSTOP, MB_ICONERROR 동일
-		{ MB_ICONWARNING,       "경고 아이콘 | 확인" },   // MB_ICONEXCLAMATION 동일
-		{ MB_ICONINFORMATION,   "느낌표 아이콘 | 확인" }, // MB_ICONASTERISK 동일
-		{ MB_TOPMOST,           "최상위로 위치(다른 윈도우 가려지지 않음) | 확인" },
-		{ MB_RIGHT,             "오른쪽 정렬 | 확인" },
-		{ MB_RTLREADING,        "오른쪽에서 왼쪽 정렬(기본 스타일의 반대) | 확인" } // RTL => Right To Left
+        { MB_OK,                "확인" },
+        { MB_OKCANCEL,          "확인 | 취소" },
+        { MB_ABORTRETRYIGNORE,  "중단 | 다시 시도 | 무시" },
+        { MB_YESNO,             "예 | 아니오" },
+        { MB_YESNOCANCEL,       "예 | 아니오 | 취소" },
+        { MB_RETRYCANCEL,       "다시 시도 | 취소" },
+        { MB_CANCELTRYCONTINUE, "취소 | 다시 시도 | 계속" },
+        { MB_HELP,              "확인 | 도움말" },
+        { MB_USERICON,          "사용자 정의 아이콘 | 확인" },
+        { MB_ICONQUESTION,      "물음표 아이콘 | 확인" },
+        { MB_ICONERROR,         "오류 아이콘 | 확인" },   // MB_ICONSTOP, MB_ICONERROR 동일
+        { MB_ICONWARNING,       "경고 아이콘 | 확인" },   // MB_ICONEXCLAMATION 동일
+        { MB_ICONINFORMATION,   "느낌표 아이콘 | 확인" }, // MB_ICONASTERISK 동일
+        { MB_TOPMOST,           "최상위로 위치(다른 윈도우 가려지지 않음) | 확인" },
+        { MB_RIGHT,             "오른쪽 정렬 | 확인" },
+        { MB_RTLREADING,        "오른쪽에서 왼쪽 정렬(기본 스타일의 반대) | 확인" } // RTL => Right To Left
 	};
 
 	for (INT32 i = 0; i < _countof(messageBoxStyleInfoTable); ++i)
