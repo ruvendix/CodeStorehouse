@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001. 기본 프로그램", "001. 기본 프로그램\001. 기본 프로그램.vcxproj", "{45B2E265-A23C-4851-BDFF-77289162288D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002. 메시지 박스", "002. 메시지 박스\002. 메시지 박스.vcxproj", "{A03EA666-B053-4092-928D-204359E491EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,19 @@ Global
 		{45B2E265-A23C-4851-BDFF-77289162288D}.Release|x64.Build.0 = Release|x64
 		{45B2E265-A23C-4851-BDFF-77289162288D}.Release|x86.ActiveCfg = Release|Win32
 		{45B2E265-A23C-4851-BDFF-77289162288D}.Release|x86.Build.0 = Release|Win32
+		{A03EA666-B053-4092-928D-204359E491EF}.Debug|x64.ActiveCfg = Debug|x64
+		{A03EA666-B053-4092-928D-204359E491EF}.Debug|x64.Build.0 = Debug|x64
+		{A03EA666-B053-4092-928D-204359E491EF}.Debug|x86.ActiveCfg = Debug|Win32
+		{A03EA666-B053-4092-928D-204359E491EF}.Debug|x86.Build.0 = Debug|Win32
+		{A03EA666-B053-4092-928D-204359E491EF}.Release|x64.ActiveCfg = Release|x64
+		{A03EA666-B053-4092-928D-204359E491EF}.Release|x64.Build.0 = Release|x64
+		{A03EA666-B053-4092-928D-204359E491EF}.Release|x86.ActiveCfg = Release|Win32
+		{A03EA666-B053-4092-928D-204359E491EF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF7EDB17-DFAB-4DAD-9BA0-234D9F1BF4D3}
 	EndGlobalSection
 EndGlobal
