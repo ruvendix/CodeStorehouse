@@ -8,7 +8,7 @@
 #include <cstdio>  // snprintf()를 사용하기 위해 포함시킵니다.
 #include <cstdlib> // _countof 매크로를 사용하기 위해 포함시킵니다. 배열의 개수를 구해주는 매크로 함수입니다.
 
-// 윈도우 헤더 파일에서 최소로 필요로 하는 것들만 포함시킵니다.
+// 윈도우 헤더 파일에서 최소로 필요로 하는 것들만 포함시킵니다. 
 #ifdef WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #else
