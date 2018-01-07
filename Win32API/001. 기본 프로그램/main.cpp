@@ -95,7 +95,8 @@ INT32 APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmd
 		}
 	}
 
-	return static_cast<INT32>(message.message);
+	// 반환값은 PostQuitMessage()로부터 전달 받은 0입니다.
+	return static_cast<INT32>(message.wParam);
 }
 
 LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 Message, WPARAM wParam, LPARAM lParam)
@@ -114,7 +115,7 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 Message, WPARAM wParam, LPARA
 		case WM_CLOSE:
 		{
 			INT32 a = 100;
-			PostQuitMessage(0); // 0은 WinMain()에 전달할 값입니다.
+			PostQuitMessage(0); // 0은 WinMain()에 전달할 값입니다. msg에 저장됩니다.
 			return 0;
 		}
 	}
