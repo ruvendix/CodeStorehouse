@@ -11,7 +11,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003. GetLastError()", "003.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "004. 자동 생성 코드", "004. 자동 생성 코드\004. 자동 생성 코드.vcxproj", "{DAF73DBC-6EC3-472E-95B2-C4E34C46B88D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{613DB773-5AF3-4789-BABB-9880EEBCDF1D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "005. 커스텀 커서", "005. 커스텀 커서\005. 커스텀 커서.vcxproj", "{77A825BD-8D25-4DD6-921C-5AE3503997CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,18 +63,16 @@ Global
 		{DAF73DBC-6EC3-472E-95B2-C4E34C46B88D}.Release|x64.Build.0 = Release|x64
 		{DAF73DBC-6EC3-472E-95B2-C4E34C46B88D}.Release|x86.ActiveCfg = Release|Win32
 		{DAF73DBC-6EC3-472E-95B2-C4E34C46B88D}.Release|x86.Build.0 = Release|Win32
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Debug|x64.Build.0 = Debug|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Debug|x86.Build.0 = Debug|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Release|x64.ActiveCfg = Release|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Release|x64.Build.0 = Release|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Release|x86.ActiveCfg = Release|Any CPU
-		{613DB773-5AF3-4789-BABB-9880EEBCDF1D}.Release|x86.Build.0 = Release|Any CPU
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Debug|x64.ActiveCfg = Debug|x64
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Debug|x64.Build.0 = Debug|x64
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Debug|x86.Build.0 = Debug|Win32
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Release|Any CPU.ActiveCfg = Release|Win32
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Release|x64.ActiveCfg = Release|x64
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Release|x64.Build.0 = Release|x64
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Release|x86.ActiveCfg = Release|Win32
+		{77A825BD-8D25-4DD6-921C-5AE3503997CC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
