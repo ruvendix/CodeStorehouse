@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001. 기본 프로그램", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002. 메시지 박스", "002. 메시지 박스\002. 메시지 박스.vcxproj", "{A03EA666-B053-4092-928D-204359E491EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003. GetLastError()", "003. GetLastError()\003. GetLastError().vcxproj", "{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{A03EA666-B053-4092-928D-204359E491EF}.Release|x64.Build.0 = Release|x64
 		{A03EA666-B053-4092-928D-204359E491EF}.Release|x86.ActiveCfg = Release|Win32
 		{A03EA666-B053-4092-928D-204359E491EF}.Release|x86.Build.0 = Release|Win32
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Debug|x64.ActiveCfg = Debug|x64
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Debug|x64.Build.0 = Debug|x64
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Debug|x86.ActiveCfg = Debug|Win32
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Debug|x86.Build.0 = Debug|Win32
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Release|x64.ActiveCfg = Release|x64
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Release|x64.Build.0 = Release|x64
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Release|x86.ActiveCfg = Release|Win32
+		{A5F1CDFB-0EC4-4567-869A-15785AC7CD92}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
