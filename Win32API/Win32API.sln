@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "005. 커스텀 커서", "00
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "006. 다중 인스턴스 방지", "006. 다중 인스턴스 방지\006. 다중 인스턴스 방지.vcxproj", "{96C816A5-8AD2-4FB1-8F23-67EBC28DC3D7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "007. 비트맵 기초", "007. 비트맵 기초\007. 비트맵 기초.vcxproj", "{19598C12-E803-4482-8D52-A38A134BBB0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,16 @@ Global
 		{96C816A5-8AD2-4FB1-8F23-67EBC28DC3D7}.Release|x64.Build.0 = Release|x64
 		{96C816A5-8AD2-4FB1-8F23-67EBC28DC3D7}.Release|x86.ActiveCfg = Release|Win32
 		{96C816A5-8AD2-4FB1-8F23-67EBC28DC3D7}.Release|x86.Build.0 = Release|Win32
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Debug|x64.ActiveCfg = Debug|x64
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Debug|x64.Build.0 = Debug|x64
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Debug|x86.ActiveCfg = Debug|Win32
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Debug|x86.Build.0 = Debug|Win32
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Release|x64.ActiveCfg = Release|x64
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Release|x64.Build.0 = Release|x64
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Release|x86.ActiveCfg = Release|Win32
+		{19598C12-E803-4482-8D52-A38A134BBB0D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
