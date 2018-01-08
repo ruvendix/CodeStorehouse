@@ -114,7 +114,11 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 Message, WPARAM wParam, LPARA
 	{
 		case WM_CLOSE:
 		{
-			INT32 a = 100;
+			DestroyWindow(hWnd);
+			return 0;
+		}
+		case WM_DESTROY:
+		{
 			PostQuitMessage(0); // 0은 WinMain()에 전달할 값입니다. msg에 저장됩니다.
 			return 0;
 		}
