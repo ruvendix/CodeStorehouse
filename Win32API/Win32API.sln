@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "011. 비트맵 파일 출�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "012. 타이머", "012. 타이머\012. 타이머.vcxproj", "{069E8B07-3202-4DBE-9EC7-D92BB003F320}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "013. 펜", "013. 펜\013. 펜.vcxproj", "{1F5729BE-4C7A-4268-A94C-D6787941C232}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +159,16 @@ Global
 		{069E8B07-3202-4DBE-9EC7-D92BB003F320}.Release|x64.Build.0 = Release|x64
 		{069E8B07-3202-4DBE-9EC7-D92BB003F320}.Release|x86.ActiveCfg = Release|Win32
 		{069E8B07-3202-4DBE-9EC7-D92BB003F320}.Release|x86.Build.0 = Release|Win32
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Debug|x64.ActiveCfg = Debug|x64
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Debug|x64.Build.0 = Debug|x64
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Debug|x86.ActiveCfg = Debug|Win32
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Debug|x86.Build.0 = Debug|Win32
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Release|Any CPU.ActiveCfg = Release|Win32
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Release|x64.ActiveCfg = Release|x64
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Release|x64.Build.0 = Release|x64
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Release|x86.ActiveCfg = Release|Win32
+		{1F5729BE-4C7A-4268-A94C-D6787941C232}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
