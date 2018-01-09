@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "013. 펜", "013. 펜\013. �
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "014. 솔리드 브러시", "014. 솔리드 브러시\014. 솔리드 브러시.vcxproj", "{C7FD1457-2141-4455-9973-D4CAEB0E929A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "015. 해치 브러시", "015. 해치 브러시\015. 해치 브러시.vcxproj", "{399CC85F-C3A2-436B-B24A-8467B2C1360F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,16 @@ Global
 		{C7FD1457-2141-4455-9973-D4CAEB0E929A}.Release|x64.Build.0 = Release|x64
 		{C7FD1457-2141-4455-9973-D4CAEB0E929A}.Release|x86.ActiveCfg = Release|Win32
 		{C7FD1457-2141-4455-9973-D4CAEB0E929A}.Release|x86.Build.0 = Release|Win32
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Debug|x64.ActiveCfg = Debug|x64
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Debug|x64.Build.0 = Debug|x64
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Debug|x86.ActiveCfg = Debug|Win32
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Debug|x86.Build.0 = Debug|Win32
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|x64.ActiveCfg = Release|x64
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|x64.Build.0 = Release|x64
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|x86.ActiveCfg = Release|Win32
+		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
