@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "014. 솔리드 브러시", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "015. 해치 브러시", "015. 해치 브러시\015. 해치 브러시.vcxproj", "{399CC85F-C3A2-436B-B24A-8467B2C1360F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "016. 기본 DC 속성 변경", "016. 기본 DC 속성 변경\016. 기본 DC 속성 변경.vcxproj", "{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -193,6 +195,16 @@ Global
 		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|x64.Build.0 = Release|x64
 		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|x86.ActiveCfg = Release|Win32
 		{399CC85F-C3A2-436B-B24A-8467B2C1360F}.Release|x86.Build.0 = Release|Win32
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Debug|x64.ActiveCfg = Debug|x64
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Debug|x64.Build.0 = Debug|x64
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Debug|x86.ActiveCfg = Debug|Win32
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Debug|x86.Build.0 = Debug|Win32
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Release|x64.ActiveCfg = Release|x64
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Release|x64.Build.0 = Release|x64
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Release|x86.ActiveCfg = Release|Win32
+		{B18214B2-61F2-4FAE-A025-9A9B9BB9F9A5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
