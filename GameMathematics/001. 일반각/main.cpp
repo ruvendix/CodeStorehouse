@@ -10,7 +10,7 @@
 #include <conio.h>   // CMD 입출력을 다루기 위한 헤더(비표준)
 #include <windows.h> // CMD 확장 기능을 이용하기 위한 헤더
 #include <cstdio>    // CMD 입출력을 다루기 위한 헤더(표준)
-
+    
 int main()
 {
 	printf("\n");
