@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001. 일반각", "001. 일반각\001. 일반각.vcxproj", "{DCA77EE6-1F40-45B4-8A07-064F1FF1F3B6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002. 호도법", "002. 호도법\002. 호도법.vcxproj", "{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{DCA77EE6-1F40-45B4-8A07-064F1FF1F3B6}.Release|x64.Build.0 = Release|x64
 		{DCA77EE6-1F40-45B4-8A07-064F1FF1F3B6}.Release|x86.ActiveCfg = Release|Win32
 		{DCA77EE6-1F40-45B4-8A07-064F1FF1F3B6}.Release|x86.Build.0 = Release|Win32
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Debug|x64.ActiveCfg = Debug|x64
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Debug|x64.Build.0 = Debug|x64
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Debug|x86.Build.0 = Debug|Win32
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Release|x64.ActiveCfg = Release|x64
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Release|x64.Build.0 = Release|x64
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Release|x86.ActiveCfg = Release|Win32
+		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
