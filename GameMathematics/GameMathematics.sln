@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001. 일반각", "001. 일�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002. 호도법", "002. 호도법\002. 호도법.vcxproj", "{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003. 삼각함수", "003. 삼각함수\003. 삼각함수.vcxproj", "{60A03015-0F91-4CD4-B524-79F9DFB98043}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Release|x64.Build.0 = Release|x64
 		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Release|x86.ActiveCfg = Release|Win32
 		{832CDD4F-7248-483E-A82F-EFBBE7A6C6AA}.Release|x86.Build.0 = Release|Win32
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Debug|x64.ActiveCfg = Debug|x64
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Debug|x64.Build.0 = Debug|x64
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Debug|x86.ActiveCfg = Debug|Win32
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Debug|x86.Build.0 = Debug|Win32
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Release|x64.ActiveCfg = Release|x64
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Release|x64.Build.0 = Release|x64
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Release|x86.ActiveCfg = Release|Win32
+		{60A03015-0F91-4CD4-B524-79F9DFB98043}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
