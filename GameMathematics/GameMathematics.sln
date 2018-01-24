@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003. 삼각함수", "003. �
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "004. 벡터의 정의", "004. 벡터의 정의\004. 벡터의 정의.vcxproj", "{9E506E60-EDF2-44D6-AD63-283A8E865118}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "005. 벡터의 덧셈과 뺄셈", "005. 벡터의 덧셈과 뺄셈\005. 벡터의 덧셈과 뺄셈.vcxproj", "{11E230A4-8339-4368-824D-F658842C6E31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{9E506E60-EDF2-44D6-AD63-283A8E865118}.Release|x64.Build.0 = Release|x64
 		{9E506E60-EDF2-44D6-AD63-283A8E865118}.Release|x86.ActiveCfg = Release|Win32
 		{9E506E60-EDF2-44D6-AD63-283A8E865118}.Release|x86.Build.0 = Release|Win32
+		{11E230A4-8339-4368-824D-F658842C6E31}.Debug|x64.ActiveCfg = Debug|x64
+		{11E230A4-8339-4368-824D-F658842C6E31}.Debug|x64.Build.0 = Debug|x64
+		{11E230A4-8339-4368-824D-F658842C6E31}.Debug|x86.ActiveCfg = Debug|Win32
+		{11E230A4-8339-4368-824D-F658842C6E31}.Debug|x86.Build.0 = Debug|Win32
+		{11E230A4-8339-4368-824D-F658842C6E31}.Release|x64.ActiveCfg = Release|x64
+		{11E230A4-8339-4368-824D-F658842C6E31}.Release|x64.Build.0 = Release|x64
+		{11E230A4-8339-4368-824D-F658842C6E31}.Release|x86.ActiveCfg = Release|Win32
+		{11E230A4-8339-4368-824D-F658842C6E31}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
