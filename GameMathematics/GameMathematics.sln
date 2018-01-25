@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "004. 벡터의 정의", "00
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "005. 벡터의 덧셈과 뺄셈", "005. 벡터의 덧셈과 뺄셈\005. 벡터의 덧셈과 뺄셈.vcxproj", "{11E230A4-8339-4368-824D-F658842C6E31}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "006. 벡터의 정규화", "006. 벡터의 정규화\006. 벡터의 정규화.vcxproj", "{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{11E230A4-8339-4368-824D-F658842C6E31}.Release|x64.Build.0 = Release|x64
 		{11E230A4-8339-4368-824D-F658842C6E31}.Release|x86.ActiveCfg = Release|Win32
 		{11E230A4-8339-4368-824D-F658842C6E31}.Release|x86.Build.0 = Release|Win32
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Debug|x64.ActiveCfg = Debug|x64
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Debug|x64.Build.0 = Debug|x64
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Debug|x86.ActiveCfg = Debug|Win32
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Debug|x86.Build.0 = Debug|Win32
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Release|x64.ActiveCfg = Release|x64
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Release|x64.Build.0 = Release|x64
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Release|x86.ActiveCfg = Release|Win32
+		{CDBFAE65-E4B1-4C27-B7FF-8E693354F2F9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
