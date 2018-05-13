@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "008. 벡터의 외적", "00
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "009. 행렬", "009. 행렬\009. 행렬.vcxproj", "{DDF8D3FE-E484-4A74-A8DE-20ABA1C25A8B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "010. 행렬의 종류", "010. 행렬의 종류\010. 행렬의 종류.vcxproj", "{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{DDF8D3FE-E484-4A74-A8DE-20ABA1C25A8B}.Release|x64.Build.0 = Release|x64
 		{DDF8D3FE-E484-4A74-A8DE-20ABA1C25A8B}.Release|x86.ActiveCfg = Release|Win32
 		{DDF8D3FE-E484-4A74-A8DE-20ABA1C25A8B}.Release|x86.Build.0 = Release|Win32
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Debug|x64.ActiveCfg = Debug|x64
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Debug|x64.Build.0 = Debug|x64
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Debug|x86.Build.0 = Debug|Win32
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Release|x64.ActiveCfg = Release|x64
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Release|x64.Build.0 = Release|x64
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Release|x86.ActiveCfg = Release|Win32
+		{D8D866F4-954E-4D7E-A847-9F2EC9C0602B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
