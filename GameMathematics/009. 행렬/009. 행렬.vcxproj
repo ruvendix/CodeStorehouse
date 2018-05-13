@@ -23,6 +23,7 @@
     <ProjectGuid>{DDF8D3FE-E484-4A74-A8DE-20ABA1C25A8B}</ProjectGuid>
     <RootNamespace>My009행렬</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>009. 행렬의 정의</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
