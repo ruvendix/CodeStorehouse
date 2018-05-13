@@ -273,19 +273,19 @@ public:
 		// 1青
 		mat.m_r10 = m_r10 + rhs.m_r10;
 		mat.m_r11 = m_r11 + rhs.m_r11;
-		mat.m_r12 = m_r22 + rhs.m_r12;
-		mat.m_r13 = m_r33 + rhs.m_r13;
+		mat.m_r12 = m_r12 + rhs.m_r12;
+		mat.m_r13 = m_r13 + rhs.m_r13;
 
 		// 2青
 		mat.m_r20 = m_r20 + rhs.m_r20;
-		mat.m_r21 = m_r11 + rhs.m_r21;
+		mat.m_r21 = m_r21 + rhs.m_r21;
 		mat.m_r22 = m_r22 + rhs.m_r22;
-		mat.m_r23 = m_r33 + rhs.m_r23;
+		mat.m_r23 = m_r23 + rhs.m_r23;
 
 		// 3青
 		mat.m_r30 = m_r30 + rhs.m_r30;
-		mat.m_r31 = m_r11 + rhs.m_r31;
-		mat.m_r32 = m_r22 + rhs.m_r32;
+		mat.m_r31 = m_r31 + rhs.m_r31;
+		mat.m_r32 = m_r32 + rhs.m_r32;
 		mat.m_r33 = m_r33 + rhs.m_r33;
 
 		return mat;
@@ -304,19 +304,19 @@ public:
 		// 1青			 
 		mat.m_r10 = m_r10 - rhs.m_r10;
 		mat.m_r11 = m_r11 - rhs.m_r11;
-		mat.m_r12 = m_r22 - rhs.m_r12;
-		mat.m_r13 = m_r33 - rhs.m_r13;
+		mat.m_r12 = m_r12 - rhs.m_r12;
+		mat.m_r13 = m_r13 - rhs.m_r13;
 						  
 		// 2青			 
 		mat.m_r20 = m_r20 - rhs.m_r20;
-		mat.m_r21 = m_r11 - rhs.m_r21;
+		mat.m_r21 = m_r21 - rhs.m_r21;
 		mat.m_r22 = m_r22 - rhs.m_r22;
-		mat.m_r23 = m_r33 - rhs.m_r23;
+		mat.m_r23 = m_r23 - rhs.m_r23;
 						  
 		// 3青			 
 		mat.m_r30 = m_r30 - rhs.m_r30;
-		mat.m_r31 = m_r11 - rhs.m_r31;
-		mat.m_r32 = m_r22 - rhs.m_r32;
+		mat.m_r31 = m_r31 - rhs.m_r31;
+		mat.m_r32 = m_r32 - rhs.m_r32;
 		mat.m_r33 = m_r33 - rhs.m_r33;
 
 		return mat;
