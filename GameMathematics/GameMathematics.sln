@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "009. 행렬의 정의", "00
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "011. 행렬의 덧셈과 뺄셈", "011. 행렬의 덧셈과 뺄셈\011. 행렬의 덧셈과 뺄셈.vcxproj", "{B46329C7-7C7A-43C9-B632-02C392002D12}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "012. 행렬의 스칼라곱셈", "012. 행렬의 스칼라곱셈\012. 행렬의 스칼라곱셈.vcxproj", "{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{B46329C7-7C7A-43C9-B632-02C392002D12}.Release|x64.Build.0 = Release|x64
 		{B46329C7-7C7A-43C9-B632-02C392002D12}.Release|x86.ActiveCfg = Release|Win32
 		{B46329C7-7C7A-43C9-B632-02C392002D12}.Release|x86.Build.0 = Release|Win32
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Debug|x64.ActiveCfg = Debug|x64
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Debug|x64.Build.0 = Debug|x64
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Debug|x86.ActiveCfg = Debug|Win32
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Debug|x86.Build.0 = Debug|Win32
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Release|x64.ActiveCfg = Release|x64
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Release|x64.Build.0 = Release|x64
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Release|x86.ActiveCfg = Release|Win32
+		{44EACF99-1CAD-47E7-8889-91DDE6AD4B62}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
