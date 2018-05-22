@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "015. 가우스 소거법(�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "016. 역행렬", "016. 역행렬\016. 역행렬.vcxproj", "{D6DBBCE6-B52C-43A0-B9C2-92D3955E86E1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "017. 가우스-조던 소거법", "017. 가우스-조던 소거법\017. 가우스-조던 소거법.vcxproj", "{5A30783C-E656-4ADA-AE09-110630DA04F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{D6DBBCE6-B52C-43A0-B9C2-92D3955E86E1}.Release|x64.Build.0 = Release|x64
 		{D6DBBCE6-B52C-43A0-B9C2-92D3955E86E1}.Release|x86.ActiveCfg = Release|Win32
 		{D6DBBCE6-B52C-43A0-B9C2-92D3955E86E1}.Release|x86.Build.0 = Release|Win32
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Debug|x64.ActiveCfg = Debug|x64
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Debug|x64.Build.0 = Debug|x64
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Debug|x86.Build.0 = Debug|Win32
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Release|x64.ActiveCfg = Release|x64
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Release|x64.Build.0 = Release|x64
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Release|x86.ActiveCfg = Release|Win32
+		{5A30783C-E656-4ADA-AE09-110630DA04F3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
