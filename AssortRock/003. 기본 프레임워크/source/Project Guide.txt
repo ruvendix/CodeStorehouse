@@ -1,0 +1,41 @@
+필터 구성은 다음과 같습니다. (파일 구성도 거의 동일)
+
+Resource
+	아이콘
+	마우스 커서
+
+Source
+	game
+		1. scene
+		2. object
+
+	system
+		1. base
+			1. common
+				common_base
+				macro
+				global_instance
+				global_constant
+				global_type
+				global_variable_declaration
+				global_function
+
+			2. misc
+				RXBaseInterface
+				RXTime
+
+		2. global_instance
+			1. manager
+				FPS
+				scene
+
+			2. misc
+				RXCore
+
+		3. math
+			1. 2D
+			2. 3D
+
+	main
+	resource 상수값 모음
+	Project Guide.txt
