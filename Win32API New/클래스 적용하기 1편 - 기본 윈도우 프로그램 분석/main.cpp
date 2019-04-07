@@ -16,8 +16,8 @@ INT32 APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	HWND hWnd = ::CreateWindow(wcex.lpszClassName, wcex.lpszClassName, WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, CW_USEDEFAULT, 1024, 768, nullptr, nullptr, hInstance, nullptr);
 
-	UpdateWindow(hWnd); 
-	ShowWindow(hWnd, cmdShow);
+	::UpdateWindow(hWnd); 
+	::ShowWindow(hWnd, cmdShow);
 	
 	MSG message;
 	::ZeroMemory(&message, sizeof(message));
