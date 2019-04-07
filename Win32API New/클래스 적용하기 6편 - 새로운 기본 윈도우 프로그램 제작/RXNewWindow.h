@@ -16,7 +16,7 @@ namespace RX
 		// ============================================================
 		// 메시지 핸들러
 		virtual void OnLButtonDown(HWND hWnd, BOOL bDoubleClick, 
-			INT32 x, INT32 y, UINT keyFlags);
+			INT32 x, INT32 y, UINT keyFlags) override;
 	};
 
 } // namespace RX end
