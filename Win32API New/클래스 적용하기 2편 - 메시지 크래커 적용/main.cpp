@@ -50,7 +50,7 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARA
 		HANDLE_MSG(hWnd, WM_DESTROY, OnDestroy);
 	}
 
-	return DefWindowProc(hWnd, message, wParam, lParam);
+	return ::DefWindowProc(hWnd, message, wParam, lParam);
 }
 
 void OnDestroy(HWND hWnd)

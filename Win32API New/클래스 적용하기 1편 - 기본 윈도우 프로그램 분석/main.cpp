@@ -47,5 +47,5 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARA
 		return S_OK;
 	}
 
-	return DefWindowProc(hWnd, message, wParam, lParam);
+	return ::DefWindowProc(hWnd, message, wParam, lParam);
 }
