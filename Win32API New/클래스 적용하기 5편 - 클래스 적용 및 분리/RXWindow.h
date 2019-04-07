@@ -20,7 +20,7 @@ namespace RX
 		// ============================================================
 		// 그 외의 함수
 		HRESULT Create(INT32 x, INT32 y, INT32 clientWidth, INT32 clientHeight); // 일단은 기본형으로
-		void         ChangeWindowTitle(const std::wstring& szWndTitle);
+		void    ChangeWindowTitle(const std::wstring& szWndTitle);
 
 		// ============================================================
 		// Getter
