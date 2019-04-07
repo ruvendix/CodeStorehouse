@@ -2,8 +2,8 @@
 
 LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARAM lParam);
 
-INT32 APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
-	LPSTR lpCmdLine, INT32 cmdShow)
+INT32 APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
+	LPWSTR lpCmdLine, INT32 cmdShow)
 {
 	WNDCLASSEX wcex    = { sizeof(wcex) };
 	wcex.hInstance     = hInstance;
