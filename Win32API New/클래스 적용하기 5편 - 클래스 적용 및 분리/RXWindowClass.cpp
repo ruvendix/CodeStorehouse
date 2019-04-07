@@ -44,9 +44,7 @@ namespace RX
 		switch (message)
 		{
 			HANDLE_MSG(hWnd, WM_CREATE,      pWindow->OnCreate);
-			HANDLE_MSG(hWnd, WM_CLOSE,       pWindow->OnClose);
 			HANDLE_MSG(hWnd, WM_DESTROY,     pWindow->OnDestroy);
-			HANDLE_MSG(hWnd, WM_LBUTTONDOWN, pWindow->OnLButtonDown);
 		}
 
 		return ::DefWindowProc(hWnd, message, wParam, lParam);
