@@ -1,9 +1,9 @@
-#include "RXLayeredWindow.h"
+#include "RXSplashWindow.h"
 
 namespace RX
 {
 
-	BOOL RXLayeredWindow::OnCreate(HWND hWnd, CREATESTRUCT * pCreateStruct)
+	BOOL RXSplashWindow::OnCreate(HWND hWnd, CREATESTRUCT * pCreateStruct)
 	{
 		std::srand(::timeGetTime());
 		std::wstring szFilePath =
@@ -25,12 +25,14 @@ namespace RX
 		::SetWindowLongPtr(hWnd, GWL_EXSTYLE, ::GetWindowLongPtr(hWnd, GWL_EXSTYLE) |
 			WS_EX_LAYERED | WS_EX_TOPMOST | WS_EX_TOOLWINDOW);
 		::SetLayeredWindowAttributes(hWnd, RGB(255, 255, 255), 0, LWA_COLORKEY);
+		//UpdateLayeredWindow(hWnd, hdcScreen, &ptOrigin, &sizeSplash,
+		//	hdcMem, &ptZero, colorKey, &blend, ULW_COLORKEY | ULW_ALPHA);
 
 		::SetTimer(hWnd, 1, 3000, nullptr);
 		return TRUE;
 	}
 
-	void RXLayeredWindow::OnPaint(HWND hWnd)
+	void RXSplashWindow::OnPaint(HWND hWnd)
 	{
 		PAINTSTRUCT ps;
 		HDC hDC = BeginPaint(hWnd, &ps);
@@ -44,14 +46,14 @@ namespace RX
 		EndPaint(hWnd, &ps);
 	}
 
-	void RXLayeredWindow::OnDestroy(HWND hWnd)
+	void RXSplashWindow::OnDestroy(HWND hWnd)
 	{
 		::KillTimer(hWnd, 1);
 		DeleteBitmap(m_hBitmap);
 		RXWindow::OnDestroy(hWnd);
 	}
 
-	UINT RXLayeredWindow::OnNCHitTest(HWND hWnd, INT32 x, INT32 y)
+	UINT RXSplashWindow::OnNCHitTest(HWND hWnd, INT32 x, INT32 y)
 	{
 		INT32 hitResult = ::DefWindowProc(hWnd, WM_NCHITTEST, 0, MAKELPARAM(x, y));
 		if (hitResult == HTCLIENT)
@@ -61,7 +63,7 @@ namespace RX
 		return hitResult;
 	}
 
-	void RXLayeredWindow::OnTimer(HWND hWnd, UINT id)
+	void RXSplashWindow::OnTimer(HWND hWnd, UINT id)
 	{
 		if (id == 1)
 		{

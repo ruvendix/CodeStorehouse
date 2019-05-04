@@ -1,5 +1,5 @@
-#ifndef RX_LAYERED_WINDOW_H_
-#define RX_LAYERED_WINDOW_H_
+#ifndef RX_SPLASH_WINDOW_H_
+#define RX_SPLASH_WINDOW_H_
 
 #include "RXCommon.h"
 #include "RXWindow.h"
@@ -7,13 +7,13 @@
 namespace RX
 {
 
-	class RXLayeredWindow : public RXWindow
+	class RXSplashWindow : public RXWindow
 	{
 	public:
 		using RXWindow::RXWindow;
 
-		RXLayeredWindow() = default;
-		virtual ~RXLayeredWindow() = default;
+		RXSplashWindow() = default;
+		virtual ~RXSplashWindow() = default;
 
 		// ============================================================
 		// 메시지 핸들러
