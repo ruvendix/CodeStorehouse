@@ -25,9 +25,7 @@ namespace RX
 		::SetWindowLongPtr(hWnd, GWL_EXSTYLE, ::GetWindowLongPtr(hWnd, GWL_EXSTYLE) |
 			WS_EX_LAYERED | WS_EX_TOPMOST | WS_EX_TOOLWINDOW);
 		::SetLayeredWindowAttributes(hWnd, RGB(255, 255, 255), 0, LWA_COLORKEY);
-		//UpdateLayeredWindow(hWnd, hdcScreen, &ptOrigin, &sizeSplash,
-		//	hdcMem, &ptZero, colorKey, &blend, ULW_COLORKEY | ULW_ALPHA);
-
+		
 		::SetTimer(hWnd, 1, 3000, nullptr);
 		return TRUE;
 	}
