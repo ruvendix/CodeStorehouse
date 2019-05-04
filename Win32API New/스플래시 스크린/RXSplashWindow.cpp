@@ -3,7 +3,7 @@
 namespace RX
 {
 
-	BOOL RXSplashWindow::OnCreate(HWND hWnd, CREATESTRUCT * pCreateStruct)
+	BOOL RXSplashWindow::OnCreate(HWND hWnd, CREATESTRUCT* pCreateStruct)
 	{
 		std::srand(::timeGetTime());
 		std::wstring szFilePath =
@@ -16,7 +16,7 @@ namespace RX
 			ERRMSGBOX(_T("비트맵 로드 실패!"));
 			return FALSE;
 		}
-
+		
 		// WS_EX_LAYERED로 설정하면 반드시
 		// SetLayeredWindowAttributes() 또는
 		// UpdateLayeredWindow()를 바로 호출해야 정상 작동이 보장됩니다!
@@ -24,8 +24,10 @@ namespace RX
 		// 작업 표시줄과 알트탭 목록에서 숨기려면 WS_EX_TOOLWINDOW를 설정하면 됩니다.
 		::SetWindowLongPtr(hWnd, GWL_EXSTYLE, ::GetWindowLongPtr(hWnd, GWL_EXSTYLE) |
 			WS_EX_LAYERED | WS_EX_TOPMOST | WS_EX_TOOLWINDOW);
-		::SetLayeredWindowAttributes(hWnd, RGB(255, 255, 255), 0, LWA_COLORKEY);
-		
+		::SetLayeredWindowAttributes(hWnd, WINDOW_COLOR_WHITE, 0, LWA_COLORKEY);
+		//UpdateLayeredWindow(hWnd, hdcScreen, &ptOrigin, &sizeSplash,
+		//	hdcMem, &ptZero, colorKey, &blend, ULW_COLORKEY | ULW_ALPHA);
+
 		::SetTimer(hWnd, 1, 3000, nullptr);
 		return TRUE;
 	}
@@ -39,7 +41,7 @@ namespace RX
 		::SetWindowPos(hWnd, HWND_TOPMOST, pt.x, pt.y, 0, 0, SWP_NOSIZE);
 
 		RXGlobal::DrawBimapExcludeColorKey(hDC, m_hBitmap,
-			getClientWidth(), getClientHeight(), RGB(255, 255, 255), true);
+			getClientWidth(), getClientHeight(), WINDOW_COLOR_WHITE, true);
 
 		EndPaint(hWnd, &ps);
 	}

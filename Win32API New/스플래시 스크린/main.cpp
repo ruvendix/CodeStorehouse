@@ -3,7 +3,7 @@
 #include "RXControlTestWindow.h"
 #include "RXWindowTestWindow.h"
 #include "RXPopupWindow.h"
-#include "RXLayeredWindow.h"
+#include "RXSplashWindow.h"
 
 INT32 APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	LPTSTR szCommandLine, INT32 showType)
@@ -16,6 +16,6 @@ INT32 APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 	RX::RXGlobal::g_hMainInstance = hInstance;
 	RX::RXCustomWindowApp customWindowApp(0, 0, 1024, 768);
-	customWindowApp.setMainRXWindow(RXNew RX::RXLayeredWindow);
+	customWindowApp.setMainRXWindow(RXNew RX::RXSplashWindow);
 	return (customWindowApp.Run());
 }
