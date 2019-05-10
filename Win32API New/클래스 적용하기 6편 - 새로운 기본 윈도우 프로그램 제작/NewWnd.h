@@ -7,16 +7,25 @@
 
 // 중복 포함 방지용입니다.
 // #pragma once도 있지만 #define Guarder를 사용합니다.
-#ifndef COMMON_H_
-#define COMMON_H_
+#ifndef NEW_WINDOW_H_
+#define NEW_WINDOW_H_
 
-// 표준 기능을 사용합니다.
-#include "Standard.h"
+// RXWindow를 사용합니다.
+#include "Wnd.h"
 
-// =====================================================================================
-// 프로그램 전용입니다.
-#include "Macro.h"
-#include "Global.h"
-// =====================================================================================
+/*
+	테스트 윈도우입니다.
+*/
+class RXNewWnd : public RXWnd
+{
+public:
+	using RXWnd::RXWnd; // 생성자 위임입니다.
+
+	virtual ~RXNewWnd() = default;
+
+	// ======================================================================
+	// 메시지 핸들러입니다.
+	virtual void OnLButtonDown(HWND hWnd, BOOL bDoubleClick, INT32 x, INT32 y, UINT keyFlags) override;
+};
 
 #endif

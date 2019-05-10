@@ -1,23 +1,22 @@
+// =====================================================================================
+// Copyright(c) 2019, Ruvendix. All Rights Reserved.
+// 
+// 이 저작물은 크리에이티브 커먼즈 저작자표시 4.0 국제 라이선스에 따라 이용할 수 있습니다.
+// http://creativecommons.org/licenses/by/4.0/
+// =====================================================================================
+
+// 중복 포함 방지용입니다.
+// #pragma once도 있지만 #define Guarder를 사용합니다.
 #ifndef COMMON_H_
 #define COMMON_H_
 
-#ifndef WIN32_LEAN_AND_MEAN
-#define WIN32_LEAN_AND_MEAN
-#endif
+// 표준 기능을 사용합니다.
+#include "Standard.h"
 
-#include <tchar.h>
-
-#include <windows.h>
-#include <windowsx.h>
-#include <CommCtrl.h>
-
-#include <string>
-#include <vector>
-#include <unordered_map>
-
-#define ERRMSGBOX(szError)\
-	(::MessageBox(::GetDesktopWindow(), szError, L"오류", MB_OK))
-
-#include "RXGlobal.h"
+// =====================================================================================
+// 프로그램 전용입니다.
+#include "Macro.h"
+#include "Global.h"
+// =====================================================================================
 
 #endif

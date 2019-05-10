@@ -7,16 +7,20 @@
 
 // 중복 포함 방지용입니다.
 // #pragma once도 있지만 #define Guarder를 사용합니다.
-#ifndef COMMON_H_
-#define COMMON_H_
-
-// 표준 기능을 사용합니다.
-#include "Standard.h"
+#ifndef STANDARD_H_
+#define STANDARD_H_
 
 // =====================================================================================
-// 프로그램 전용입니다.
-#include "Macro.h"
-#include "Global.h"
-// =====================================================================================
+// 멀티바이트, 유니코드 전환 기능을 사용합니다.
+#include <tchar.h>
+
+// Win32 API를 사용합니다.
+#include <windows.h>
+
+// 매크로, 메시지 크래커, 컨트롤 편의 기능을 사용합니다.
+#include <windowsx.h>
+
+// STL을 사용합니다.
+#include <string>
 
 #endif

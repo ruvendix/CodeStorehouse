@@ -1,8 +1,27 @@
+// =====================================================================================
+// Copyright(c) 2019, Ruvendix. All Rights Reserved.
+// 
+// ÀÌ ÀúÀÛ¹°Àº Å©¸®¿¡ÀÌÆ¼ºê Ä¿¸ÕÁî ÀúÀÛÀÚÇ¥½Ã 4.0 ±¹Á¦ ¶óÀÌ¼±½º¿¡ µû¶ó ÀÌ¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+// http://creativecommons.org/licenses/by/4.0/
+// =====================================================================================
+
+/*
+	Àü¿¡´Â WIN32_LEAN_AND_MEANÀ» »ç¿ëÇßÁö¸¸,
+	¿äÁò ÄÄÇ»ÅÍ »ç¾ç¿¡¼­´Â ÀÇ¹Ì°¡ ¾øÀ¸¹Ç·Î Á¦°ÅÇÕ´Ï´Ù.
+*/
+
+// ¸ÖÆ¼¹ÙÀÌÆ®, À¯´ÏÄÚµå ÀüÈ¯ ±â´ÉÀ» »ç¿ëÇÕ´Ï´Ù.
+#include <tchar.h>
+
+// Win32 API¸¦ »ç¿ëÇÕ´Ï´Ù.
 #include <windows.h>
-#include <windowsx.h> // ë§¤í¬ë¡œ, ë©”ì‹œì§€ í¬ë˜ì»¤, ì»¨íŠ¸ë¡¤ í¸ì˜ ê¸°ëŠ¥ í¬í•¨
 
-LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARAM lParam);
+// ¸ÅÅ©·Î, ¸Ş½ÃÁö Å©·¡Ä¿, ÄÁÆ®·Ñ ÆíÀÇ ±â´ÉÀ» »ç¿ëÇÕ´Ï´Ù.
+#include <windowsx.h>
 
+LRESULT CALLBACK WndProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARAM lParam);
+
+// ¸Ş½ÃÁö ÇÚµé·¯ ¸ğÀ½ÀÔ´Ï´Ù.
 class MessageHandler
 {
 public:
@@ -10,57 +29,65 @@ public:
 	void OnDestroy(HWND hWnd);
 };
 
-MessageHandler g_messageHandler;
-
-INT32 APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
-	LPWSTR lpCmdLine, INT32 cmdShow)
+// ÀÌ¸§ ¾ø´Â namespace´Â ÇöÀç ÆÄÀÏ¿¡¼­¸¸ »ç¿ëÇÑ´Ù´Â ÀÇ¹ÌÀÔ´Ï´Ù.
+namespace
 {
-	WNDCLASSEX wcex    = { sizeof(wcex) };
+	MessageHandler gs_messageHandler;
+}
+
+// À©µµ¿ì ÇÁ·Î±×·¥ÀÇ ÁøÀÔÁ¡ÀÔ´Ï´Ù.
+INT32 APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR szCommandLine, INT32 showStyle)
+{
+	// ======================================================================
+	// »ç¿ëÇÏÁö ¾Ê´Â ¸Å°³º¯¼öÀÔ´Ï´Ù.
+	UNREFERENCED_PARAMETER(hPrevInstance);
+	UNREFERENCED_PARAMETER(szCommandLine);
+
+	// ======================================================================
+	// À©µµ¿ì Å¬·¡½º¸¦ Á¤ÀÇÇÏ°í µî·ÏÇÕ´Ï´Ù.
+	WNDCLASSEX wcex    = { sizeof(wcex) }; // ³ª¸ÓÁö ¸â¹ö´Â ÀÚµ¿ 0À¸·Î Ã¤¿öÁı´Ï´Ù.
 	wcex.hInstance     = hInstance;
-	wcex.lpszClassName = L"Base Window Program";
-	wcex.lpfnWndProc   = WindowProcedure;
+	wcex.lpszClassName = _T("Sample"); // exe ÀÌ¸§°ú´Â ¹«°üÇÕ´Ï´Ù.
+	wcex.lpfnWndProc   = WndProcedure; // ÇÔ¼ö ÀÌ¸§Àº ÁÖ¼ÒÀÔ´Ï´Ù.
 	wcex.hbrBackground = static_cast<HBRUSH>(::GetStockObject(GRAY_BRUSH));
-	
-	// ì‚¬ìš©ì ì •ì˜ ë°ì´í„°ë¥¼ ìœ„í•œ ê³µê°„ì…ë‹ˆë‹¤.
-	// ì¼ë°˜ì ìœ¼ë¡œëŠ” ì‚¬ìš©í•˜ì§€ ì•Šìœ¼ë¯€ë¡œ 0ìœ¼ë¡œ ì´ˆê¸°í™”í•˜ì§€ë§Œ
-	// ê¸°ë³¸ ìœˆë„ìš° í”„ë¡œê·¸ë¨ì˜ í´ë˜ìŠ¤í™”ë¥¼ ìœ„í•´ì„œëŠ” í•„ìš”í•˜ë¯€ë¡œ 4ë°”ì´íŠ¸ë§Œí¼ í• ë‹¹í•©ë‹ˆë‹¤.
-	wcex.cbWndExtra = sizeof(LONG_PTR);
 
 	::RegisterClassEx(&wcex);
 
+	// ======================================================================
+	// À©µµ¿ì¸¦ »ı¼ºÇÏ°í »ç¿ëÀÚ¿¡°Ô º¸¿©Áİ´Ï´Ù.
 	HWND hWnd = ::CreateWindow(wcex.lpszClassName, wcex.lpszClassName, WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, CW_USEDEFAULT, 1024, 768, nullptr, nullptr, hInstance,
-		&g_messageHandler); // void*ë¥¼ ë°›ìœ¼ë¯€ë¡œ ëª¨ë“  í¬ì¸í„°ë¥¼ ë„£ì„ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
+		&gs_messageHandler); // »ç¿ëÀÚ Á¤ÀÇ Á¤º¸´Â void* Çü½ÄÀ» ¹ŞÀ¸¹Ç·Î ¸ğµç Æ÷ÀÎÅÍ°¡ ÇØ´çµË´Ï´Ù.
 
 	UpdateWindow(hWnd); 
-	ShowWindow(hWnd, cmdShow);
-	
+	ShowWindow(hWnd, showStyle);
+
+	// ======================================================================
+	// ¸Ş½ÃÁö ·çÇÁÀÔ´Ï´Ù.
 	MSG message;
 	::ZeroMemory(&message, sizeof(message));
 
-	while (true)
+	while (::GetMessage(&message, nullptr, 0, 0) == TRUE)
 	{
-		if (message.message == WM_QUIT)
-		{
-			break;
-		}
-
-		if (::GetMessage(&message, nullptr, 0, 0))
-		{
-			::TranslateMessage(&message);
-			::DispatchMessage(&message);
-		}
+		::TranslateMessage(&message);
+		::DispatchMessage(&message);
 	}
+	// ======================================================================
 
 	return static_cast<INT32>(message.wParam);
 }
 
-LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARAM lParam)
+// ¸Ş½ÃÁöÅ¥¿¡¼­ ¸Ş½ÃÁö¸¦ °¡Á®¿Â ÈÄ, ¿î¿µÃ¼Á¦°¡ È£ÃâÇÏ´Â Äİ¹é ÇÔ¼öÀÔ´Ï´Ù.
+LRESULT CALLBACK WndProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARAM lParam)
 {
+	// ======================================================================
+	// ÀúÀåÇÑ »ç¿ëÀÚ Á¤ÀÇ Á¤º¸¸¦ °¡Á®¿É´Ï´Ù.
 	MessageHandler* pMessageHandler =
 		reinterpret_cast<MessageHandler*>(::GetWindowLongPtr(hWnd, GWLP_USERDATA));
 
-	// WM_CREATE ê³µìš© ì²˜ë¦¬ëŠ” ì˜ˆì™¸ì…ë‹ˆë‹¤.
+	// ======================================================================
+	// WM_CREATE Á¤º¸¿¡´Â Àü´ŞÇÑ »ç¿ëÀÚ Á¤ÀÇ Á¤º¸°¡ ÀÖ½À´Ï´Ù.
+	// ÇØ´ç Á¤º¸¸¦ °¡Á®¿Â ÈÄ, ¸Ş¸ğ¸®¿¡ ÀúÀåÇØµÓ´Ï´Ù.
 	if (message == WM_CREATE)
 	{
 		CREATESTRUCT* pCreateStruct = reinterpret_cast<CREATESTRUCT*>(lParam);
@@ -69,20 +96,26 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT32 message, WPARAM wParam, LPARA
 		pMessageHandler = reinterpret_cast<MessageHandler*>(pCreateStruct->lpCreateParams);
 	}
 
+	// ======================================================================
+	// ¸Ş½ÃÁö Å©·¡Ä¿ ½ºÀ§Ä¡ÀÔ´Ï´Ù.
 	switch (message)
 	{
 		HANDLE_MSG(hWnd, WM_CREATE,  pMessageHandler->OnCreate);
 		HANDLE_MSG(hWnd, WM_DESTROY, pMessageHandler->OnDestroy);
 	}
 
+	// ======================================================================
+	// ´ëºÎºĞÀÇ ¸Ş½ÃÁö´Â ¿î¿µÃ¼Á¦¿¡°Ô º¸³À´Ï´Ù.
 	return ::DefWindowProc(hWnd, message, wParam, lParam);
 }
 
+// WM_CREATE ÇÚµé·¯ÀÔ´Ï´Ù.
 BOOL MessageHandler::OnCreate(HWND hWnd, CREATESTRUCT* pCreateStruct)
 {
 	return TRUE;
 }
 
+// WM_DESTROY ÇÚµé·¯ÀÔ´Ï´Ù.
 void MessageHandler::OnDestroy(HWND hWnd)
 {
 	::PostQuitMessage(EXIT_SUCCESS);

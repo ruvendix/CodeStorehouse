@@ -7,16 +7,13 @@
 
 // 중복 포함 방지용입니다.
 // #pragma once도 있지만 #define Guarder를 사용합니다.
-#ifndef COMMON_H_
-#define COMMON_H_
+#ifndef MACRO_H_
+#define MACRO_H_
 
-// 표준 기능을 사용합니다.
-#include "Standard.h"
+// 기본 메시지 박스입니다.
+#define MSGBOX(szContents) (::MessageBox(::GetDesktopWindow(), szContents, L"메시지 박스", MB_OK))
 
-// =====================================================================================
-// 프로그램 전용입니다.
-#include "Macro.h"
-#include "Global.h"
-// =====================================================================================
+// 오류 메시지 박스입니다.
+#define ERRMSGBOX(szError) (::MessageBox(::GetDesktopWindow(), szError, L"오류", MB_OK))
 
 #endif

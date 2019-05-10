@@ -7,16 +7,26 @@
 
 // 중복 포함 방지용입니다.
 // #pragma once도 있지만 #define Guarder를 사용합니다.
-#ifndef COMMON_H_
-#define COMMON_H_
+#ifndef APP_H
+#define APP_H
 
-// 표준 기능을 사용합니다.
-#include "Standard.h"
+// RXWnd를 사용합니다.
+#include "Wnd.h"
 
-// =====================================================================================
-// 프로그램 전용입니다.
-#include "Macro.h"
-#include "Global.h"
-// =====================================================================================
+// RXWndClass를 사용합니다.
+#include "WndClass.h"
+
+/*
+	프로그램의 메인 루틴을 담당합니다.
+	추상 클래스이므로 상속은 필수입니다.
+*/
+class RXApp
+{
+public:
+	RXApp() = default;
+	virtual ~RXApp() = default;
+
+	virtual INT32 Run() = 0;
+};
 
 #endif

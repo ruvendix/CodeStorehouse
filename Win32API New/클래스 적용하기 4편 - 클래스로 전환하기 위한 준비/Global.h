@@ -7,16 +7,23 @@
 
 // 중복 포함 방지용입니다.
 // #pragma once도 있지만 #define Guarder를 사용합니다.
-#ifndef COMMON_H_
-#define COMMON_H_
+#ifndef GLOBAL_H_
+#define GLOBAL_H_
 
 // 표준 기능을 사용합니다.
 #include "Standard.h"
 
-// =====================================================================================
-// 프로그램 전용입니다.
-#include "Macro.h"
-#include "Global.h"
-// =====================================================================================
+/*
+	전역공간처럼 사용합니다.
+	생성자와 소멸자를 제외한 모든 멤버함수와 멤버변수는 static입니다.
+*/
+class RXGlobal final
+{
+public:
+	RXGlobal() = default;
+	~RXGlobal() = default;
+
+	static HINSTANCE m_hMainInstance; // 프로그램 메인 인스턴스입니다.
+};
 
 #endif
