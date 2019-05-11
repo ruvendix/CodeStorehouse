@@ -33,5 +33,6 @@ INT32 APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR sz
 	// 프로그램의 메인 윈도우를 변경합니다.
 	myApp.setMainWnd(RXNew RXMouseDragWnd);
 
+	// 프로그램의 메인 루틴을 작동시킵니다.
 	return (myApp.Run());
 }

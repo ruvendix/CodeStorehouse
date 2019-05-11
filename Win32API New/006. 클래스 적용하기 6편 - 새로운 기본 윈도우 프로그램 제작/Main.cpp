@@ -24,7 +24,9 @@ INT32 APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR sz
 	// 전역공간처럼 사용할 클래스에 변수를 등록합니다.
 	RXGlobal::m_hMainInstance = hInstance;
 
-	// 프로그램의 메인 루틴을 담당할 객체를 생성하고 운영합니다.
+	// 프로그램의 메인 루틴을 담당할 객체를 생성합니다.
 	RXMyApp myApp(_T("Sample"), 100, 100, 1024, 768);
+	
+	// 프로그램의 메인 루틴을 작동시킵니다.
 	return (myApp.Run());
 }
