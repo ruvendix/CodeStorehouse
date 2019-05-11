@@ -11,6 +11,9 @@
 HINSTANCE    RXGlobal::m_hMainInstance           = nullptr;
 const TCHAR* RXGlobal::SZ_WND_PROCEDURE_PROPERTY = _T("WndProcedure");
 
+// 길이와 높이를 전달하면 클라이언트 영역 기준으로 윈도우 영역을 재조정합니다.
+// 예를 들어 길이에 1024를 전달하고 높이에 768을 전달하면
+// 클라이언트 영역은 (1024 * 768)이 됩니다.
 void RXGlobal::AdjustClientArea(HWND hWnd, INT32 width, INT32 height)
 {
 	// ======================================================================
