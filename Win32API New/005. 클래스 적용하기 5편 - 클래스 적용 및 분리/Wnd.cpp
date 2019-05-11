@@ -15,6 +15,7 @@ RXWnd::RXWnd(const std::wstring& szWndTitle)
 // WM_CREATE 핸들러입니다.
 BOOL RXWnd::OnCreate(HWND hWnd, CREATESTRUCT* pCreateStruct)
 {
+	m_hWnd = hWnd;
 	return TRUE; // 메시지 크래커로 인해 반드시 TRUE를 반환해야 합니다.
 }
 
@@ -34,7 +35,7 @@ HRESULT RXWnd::Create(INT32 x, INT32 y, INT32 clientWidth, INT32 clientHeight, D
 		dwStyle, x, y, clientWidth, clientHeight,
 		nullptr, nullptr, RXGlobal::m_hMainInstance, this);
 
-	::ShowWindow(m_hWnd, SW_NORMAL);
+	::ShowWindow(m_hWnd, SW_SHOWNORMAL);
 	::UpdateWindow(m_hWnd);
 	// ======================================================================
 

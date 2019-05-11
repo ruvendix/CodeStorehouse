@@ -83,11 +83,11 @@ HRESULT RXWnd::Create(INT32 x, INT32 y, INT32 clientWidth, INT32 clientHeight, D
 {
 	// ======================================================================
 	// 윈도우를 생성하고 사용자에게 보여줍니다.
-	HWND hWnd = ::CreateWindow(m_szWndTitle.c_str(), m_szWndTitle.c_str(),
+	m_hWnd = ::CreateWindow(m_szWndTitle.c_str(), m_szWndTitle.c_str(),
 		dwStyle, x, y, clientWidth, clientHeight,
 		HWND_DESKTOP, nullptr, RXGlobal::m_hMainInstance, this);
 
-	if (hWnd == nullptr)
+	if (m_hWnd == nullptr)
 	{
 		ERRMSGBOX(L"윈도우 생성 실패!");
 		return E_FAIL;
@@ -99,7 +99,7 @@ HRESULT RXWnd::Create(INT32 x, INT32 y, INT32 clientWidth, INT32 clientHeight, D
 	// 윈도우 핸들값을 얻었으므로 클라이언트 영역 갱신이 가능합니다.
 	::GetClientRect(m_hWnd, &m_clientArea);
 
-	::ShowWindow(m_hWnd, SW_NORMAL);
+	::ShowWindow(m_hWnd, SW_SHOWNORMAL);
 	::UpdateWindow(m_hWnd);
 	// ======================================================================
 
