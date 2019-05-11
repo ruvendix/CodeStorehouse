@@ -11,7 +11,7 @@
 #define WND_CLASS_H
 
 // 공용 기능을 사용합니다.
-#include "Common.h"
+#include "Common/Common.h"
 
 /*
 	윈도우 클래스 생성 및 관리용입니다.

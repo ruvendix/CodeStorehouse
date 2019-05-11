@@ -18,6 +18,9 @@
 // 디버그 모드에서는 파일과 라인까지 알아낼 수 있습니다.
 #include <crtdbg.h>
 
+// 문자열을 안전하게 다루기 위해 사용합니다.
+#include <strsafe.h>
+
 // Win32 API를 사용합니다.
 #include <windows.h>
 

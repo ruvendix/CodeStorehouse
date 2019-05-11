@@ -1,43 +1,46 @@
-#ifndef RX_WINDOW_APP_H
-#define RX_WINDOW_APP_H
+// =====================================================================================
+// Copyright(c) 2019, Ruvendix. All Rights Reserved.
+// 
+// 이 저작물은 크리에이티브 커먼즈 저작자표시 4.0 국제 라이선스에 따라 이용할 수 있습니다.
+// http://creativecommons.org/licenses/by/4.0/
+// =====================================================================================
 
-#include "RXApp.h"
+// 중복 포함 방지용입니다.
+// #pragma once도 있지만 #define Guarder를 사용합니다.
+#ifndef MY_APP_H
+#define MY_APP_H
 
-namespace RX
+// RXApp을 사용합니다.
+#include "App.h"
+
+// FontAngleWnd를 사용합니다.
+#include "Window/FontAngleWnd.h"
+
+/*
+	메인 루틴을 담당합니다.
+*/
+class RXMyApp : public RXApp
 {
+public:
+	RXMyApp();
+	RXMyApp(const std::wstring& szTitle, INT32 x, INT32 y, INT32 clientWidth, INT32 clientHeight);
+	virtual ~RXMyApp();
+	
+	virtual HRESULT InitWndClass();
+	virtual INT32   Run() override;
 
-	enum APP_WINDOW_INFO
+	// ============================================================
+	// Setter
+	void setMainWnd(RXWnd* pWnd)
 	{
-		POSITION,
-		AREA,
-		MAX,
-	};
+		SAFE_DELETE(m_pWnd);
+		m_pWnd = pWnd;
+	}
 
-	class RXWindowApp : public RXApp
-	{
-	public:
-		RXWindowApp();
-		RXWindowApp(const std::wstring& szTitle, INT32 x, INT32 y,
-			INT32 clientWidth, INT32 clientHeight);
-		RXWindowApp(const RXWindowApp& app) = delete;
-		virtual ~RXWindowApp();
-
-		virtual INT32 Run() override;
-
-		// ============================================================
-		// Setter
-		void setRXWindow(RXWindow* pWindow)
-		{
-			m_pWindow = pWindow;
-		}
-
-	private:
-		std::pair<INT32, INT32> m_windowInfo[APP_WINDOW_INFO::MAX]; // 좌표, 영역
-
-		RXWindowClass m_windowClass;
-		RXWindow*     m_pWindow;
-	};
-
-} // namespace RX end
+private:
+	RXWndClass*   m_pWndClass;     // 윈도우 클래스입니다.
+	RXWnd*        m_pWnd;          // 윈도우입니다.
+	WndCreateInfo m_wndCreateInfo; // 윈도우 생성 정보입니다.
+};
 
 #endif

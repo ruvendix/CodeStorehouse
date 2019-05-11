@@ -7,26 +7,29 @@
 
 // 중복 포함 방지용입니다.
 // #pragma once도 있지만 #define Guarder를 사용합니다.
-#ifndef APP_H
-#define APP_H
+#ifndef FONT_ANGLE_WND_H_
+#define FONT_ANGLE_WND_H_
+
+// 공용 기능을 사용합니다.
+#include "Common/Common.h"
 
 // RXWnd를 사용합니다.
-#include "Window/Wnd.h"
-
-// RXWndClass를 사용합니다.
-#include "Window/WndClass.h"
+#include "Wnd.h"
 
 /*
-	프로그램의 메인 루틴을 담당합니다.
-	추상 클래스이므로 상속은 필수입니다.
+	폰트에 기울기를 적용하는 테스트 윈도우입니다.
 */
-class RXApp
+class RXFontAngleWnd : public RXWnd
 {
 public:
-	RXApp() = default;
-	virtual ~RXApp() = default;
+	using RXWnd::RXWnd;
 
-	virtual INT32 Run() = 0;
+	RXFontAngleWnd() = default;
+	virtual ~RXFontAngleWnd() = default;
+
+	// ======================================================================
+	// 메시지 핸들러입니다.
+	virtual void OnPaint(HWND hWnd) override;
 };
 
 #endif

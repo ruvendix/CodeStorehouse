@@ -14,7 +14,7 @@
 #include "App/MyApp.h"
 
 // RXTestWnd를 사용합니다.
-#include "Window/FontTestWnd.h"
+#include "Window/FontAngleWnd.h"
 
 // 윈도우 프로그램의 진입점입니다.
 INT32 APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR szCommandLine, INT32 showStyle)
@@ -31,7 +31,7 @@ INT32 APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR sz
 	RXMyApp myApp(_T("Sample"), 100, 100, 1024, 768);
 
 	// 프로그램의 메인 윈도우를 변경합니다.
-	myApp.setMainWnd(RXNew RXFontTestWnd);
+	myApp.setMainWnd(RXNew RXFontAngleWnd);
 
 	// 프로그램의 메인 루틴을 작동시킵니다.
 	return (myApp.Run());
