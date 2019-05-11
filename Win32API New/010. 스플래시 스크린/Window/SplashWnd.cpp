@@ -8,7 +8,7 @@
 
 namespace
 {
-	const INT32 RANDOME_SPLASH_COUNT = 6;
+	const INT32 RANDOM_SPLASH_COUNT = 6;
 	const INT32 SPLASH_TIMER_ID = 1;
 }
 
@@ -22,11 +22,11 @@ BOOL RXSplashWnd::OnCreate(HWND hWnd, CREATESTRUCT* pCreateStruct)
 
 	// ======================================================================
 	// 스플래시 윈도우로 사용할 비트맵을 랜덤하게 고릅니다.
-	// RANDOME_SPLASH_COUNT와 실제 비트맵 파일 개수는 일치해야 정상 작동됩니다.
+	// RANDOM_SPLASH_COUNT와 실제 비트맵 파일 개수는 일치해야 정상 작동됩니다.
 	// 비트맵을 고르면 비트맵 메모리에 로딩해서 비트맵 핸들값을 얻습니다.
 	std::srand(::timeGetTime());
 	std::wstring szFilePath =
-		RXGlobal::MakeFormatString(_T("resource\\splash_%d.bmp"), std::rand() % RANDOME_SPLASH_COUNT);
+		RXGlobal::MakeFormatString(_T("resource\\splash_%d.bmp"), std::rand() % RANDOM_SPLASH_COUNT);
 	m_hBitmap = static_cast<HBITMAP>(::LoadImage(RXGlobal::m_hMainInstance,
 		szFilePath.c_str(), IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION));
 
