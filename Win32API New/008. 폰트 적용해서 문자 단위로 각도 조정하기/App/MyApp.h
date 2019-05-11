@@ -14,7 +14,7 @@
 #include "App.h"
 
 // RXWnd를 사용합니다.
-#include "Wnd.h"
+#include "Window/Wnd.h"
 
 /*
 	메인 루틴을 담당합니다.
