@@ -10,7 +10,7 @@
 	요즘 컴퓨터 사양에서는 의미가 없으므로 제거합니다.
 */
 
-// RXWndApp을 사용합니다.
+// RXMyApp을 사용합니다.
 #include "App/MyApp.h"
 
 // RXTestWnd를 사용합니다.
