@@ -13,8 +13,8 @@
 // RXApp을 사용합니다.
 #include "App.h"
 
-// FontAngleWnd를 사용합니다.
-#include "Window/FontAngleWnd.h"
+// RXWnd를 사용합니다.
+#include "Wnd.h"
 
 /*
 	메인 루틴을 담당합니다.

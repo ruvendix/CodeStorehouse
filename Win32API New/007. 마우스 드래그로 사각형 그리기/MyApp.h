@@ -13,7 +13,7 @@
 // RXApp을 사용합니다.
 #include "App.h"
 
-// RXMouseDragWnd를 사용합니다.
+// RXWnd를 사용합니다.
 #include "Wnd.h"
 
 /*
