@@ -103,7 +103,7 @@ INT32 RXMyApp::Run()
 		if (message.message == WM_QUIT)
 		{
 			// 스플래시 윈도우가 파괴된 경우이므로 메인 윈도우를 생성합니다.
-			if (RXGlobal::m_bRunMainWindow == false)
+			if (RXGlobal::m_bRunMainWnd == false)
 			{
 				setMainWnd(RXNew RXWnd);
 				m_pWnd->setTitleBarTitle(m_szMainWndClassName);
@@ -114,7 +114,7 @@ INT32 RXMyApp::Run()
 					return EXIT_FAILURE;
 				}
 
-				RXGlobal::m_bRunMainWindow = true;
+				RXGlobal::m_bRunMainWnd = true;
 			}
 			// 메인 윈도우가 파괴된 경우이므로 메시지 루프를 탈출합니다.
 			else

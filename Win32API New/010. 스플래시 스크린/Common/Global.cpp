@@ -9,7 +9,7 @@
 // static 멤버변수 및 멤버상수 초기화 방법입니다.
 // 정의는 필수지만 초기화값은 설정해주지 않아도 됩니다.
 HINSTANCE    RXGlobal::m_hMainInstance           = nullptr;
-bool         RXGlobal::m_bRunMainWindow          = false;
+bool         RXGlobal::m_bRunMainWnd          = false;
 const TCHAR* RXGlobal::SZ_WND_PROCEDURE_PROPERTY = _T("WndProcedure");
 const TCHAR* RXGlobal::SZ_NULL                   = _T("");
 
