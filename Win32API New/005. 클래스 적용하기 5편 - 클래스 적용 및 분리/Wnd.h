@@ -22,12 +22,12 @@ public:
 	RXWnd(const std::wstring& szWndTtile);
 	virtual ~RXWnd() = default;
 
-	// ============================================================
+	// ======================================================================
 	// 메시지 핸들러입니다.
 	virtual BOOL OnCreate(HWND hWnd, CREATESTRUCT* pCreateStruct);
 	virtual void OnDestroy(HWND hWnd);
 
-	// ============================================================
+	// ======================================================================
 	// 윈도우 생성입니다.
 	HRESULT Create(INT32 x, INT32 y, INT32 clientWidth, INT32 clientHeight, DWORD dwStyle); // 기본형입니다.
 

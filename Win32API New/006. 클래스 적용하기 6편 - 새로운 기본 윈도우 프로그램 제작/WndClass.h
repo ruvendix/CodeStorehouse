@@ -24,7 +24,7 @@ public:
 
 	HRESULT Init(const std::wstring& szWndClass);
 
-	// ============================================================
+	// ======================================================================
 	// Setter
 	void setWindowClassName(const std::wstring& szWndClass)
 	{
