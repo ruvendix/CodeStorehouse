@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="1. Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="2. Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="2. Source\2. Project">
+      <UniqueIdentifier>{8d81fb1b-8ae1-4db4-9100-eeb29ef25657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine">
+      <UniqueIdentifier>{e1e85a70-0549-48cc-ad7c-4414d81ec5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\2. Project\1.">
+      <UniqueIdentifier>{84859792-2165-4016-a6f2-79e63fcdb8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\2. Core">
+      <UniqueIdentifier>{74a4550a-88a6-443e-b5e2-2b498b0fb82f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\2. Core\Data Structure">
+      <UniqueIdentifier>{fc02a19d-d50b-48bd-942b-d6bbfabeefef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\2. Core\Data Structure\Custom">
+      <UniqueIdentifier>{85f94dbf-d574-4331-8651-c584aea4b570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\2. Core\Data Structure\Base">
+      <UniqueIdentifier>{8f5dc559-ef52-4833-ba0a-80f74e0048bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\3. Math">
+      <UniqueIdentifier>{8cb4e139-372e-4d3b-a0a9-1eb7277bd796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\4. UI">
+      <UniqueIdentifier>{6f2ba149-24fe-4dbd-b519-957ac47ffdde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\4. UI\Window">
+      <UniqueIdentifier>{c41fef0b-890f-48fd-85a8-fdbf0d3e0c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\4. UI\Control">
+      <UniqueIdentifier>{6a005697-11fc-4043-8b87-95a0da1850ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\4. UI\Dialog">
+      <UniqueIdentifier>{5d5b7006-f291-4696-9514-72d2d9adacff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\1. Common">
+      <UniqueIdentifier>{ae8cd006-feba-4fba-8429-75dac2cb18f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Source\1. RXEngine\5. Interface">
+      <UniqueIdentifier>{4f979e41-8772-46d6-9022-b43d515494d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
